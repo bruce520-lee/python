@@ -46,3 +46,6 @@ class choose(object):
 c = choose(21)
 c.print_age()
 c.judge()
+
+
+print('hello')
