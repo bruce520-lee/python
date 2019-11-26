@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>
+        <form action="/login" method="post">
+            <label for="username">姓名</label>
+            <input id="username" type="text" name="username" placeholder="姓名"/>
+            <input type="text" name="email" placeholder="邮箱"/>
+            <input type="submit" value="提交"/>
+        </form>
+    </p>
+    <table>
+        {% for k,v in data.items %}
+        <tr>
+            <td>{{ v.email }} {{ v.username }}</td>
+{#            <td>{{ row.email }}</td>#}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

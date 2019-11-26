@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/cmdb/useredit-{{ obj.id }}/" method="post">
+        <label for="user">用户名</label>
+        <input placeholder="用户名" id="user" type="text" name="username" value="{{ obj.username }}">
+        <label for="pwd">密码</label>
+        <input placeholder="密码" id="pwd" type="text" name="password" value="{{ obj.password }}">
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

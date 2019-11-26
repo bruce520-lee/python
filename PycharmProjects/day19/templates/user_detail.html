@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .menu{
+            padding: 5px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div style="color: white;background-color: black;height: 50px;">User List</div>
+    <div style="background-color: brown;position: absolute;top: 50px;bottom: 0px;left: 0;width: 200px">
+        <a class="menu" href="/cmdb/user_info">用户管理</a>
+        <a class="menu" href="/cmdb/user_group">用户组管理</a>
+    </div>
+    <div style="position: absolute;top: 50px;left: 210px;bottom: 0;right: 0;overflow: auto">
+        <ul>
+            <h1>用户详细信息</h1>
+            <h5>{{ obj.id }}</h5>
+            <h5>{{ obj.username }}</h5>
+            <h5>{{ obj.password }}</h5>
+        </ul>
+    </div>
+</body>
+</html>

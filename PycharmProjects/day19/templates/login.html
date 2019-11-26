@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>
+        <form action="/cmdb/login/" method="post">
+            <label for="username">姓名</label>
+            <input id="username" type="text" name="username" placeholder="用户名"/>
+            <input type="password" name="password" placeholder="密码"/>
+            <input type="submit" value="提交"/>
+            <span style="color: red">{{ error_msg }}</span>
+        </form>
+    </p>
+</body>
+</html>

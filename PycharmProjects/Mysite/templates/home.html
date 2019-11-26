@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+    <div>
+        <form action="/home/" method="post">
+            <input name="username" type="text" placeholder="用户名"/>
+            <input name="email" type="text" placeholder="邮箱"/>
+            <input name="gender" type="text" placeholder="性别"/>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+    <div>
+        <table>
+            {% for item in user_list %}
+{#                {% if item.username == 'root' %}#}
+                    <tr>
+                        <td>{{ item.username }}</td>
+                        <td>{{ item.email }}</td>
+                        <td>{{ item.gender }}</td>
+                    </tr>
+{#                {% endif %}#}
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
